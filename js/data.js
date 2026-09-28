@@ -37,17 +37,20 @@ const CLUB = {
      ثم استبدل FORM_ID أدناه بالرابط الكامل. */
   joinFormEmbed:
     "https://docs.google.com/forms/d/e/1FAIpQLSfuKrUnv5DTV01bz6BQi_peSRegzNDkCOpNi8Zb4jQWQFJ11Q/viewform?usp=header",
-  
 
-  contactFormUrl:   "https://docs.google.com/forms/d/e/1FAIpQLSc2BbWNguR7VHhiivoNX1ff9bnK2n07n782ujl2a-CPsL7uaA/viewform",
-  contactFormEmbed: "https://docs.google.com/forms/d/e/1FAIpQLSc2BbWNguR7VHhiivoNX1ff9bnK2n07n782ujl2a-CPsL7uaA/viewform?embedded=true&hl=ar",
-
+  contactFormUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLSc2BbWNguR7VHhiivoNX1ff9bnK2n07n782ujl2a-CPsL7uaA/viewform",
+  contactFormEmbed:
+    "https://docs.google.com/forms/d/e/1FAIpQLSc2BbWNguR7VHhiivoNX1ff9bnK2n07n782ujl2a-CPsL7uaA/viewform?embedded=true&hl=ar",
 
   /* ─────────── 4) التواصل ─────────── */
   social: {
-    facebook: "https://www.facebook.com/593560277499706" /* ← ضع رابط صفحة فيسبوك */,
-    instagram: "https://www.instagram.com/goldenmean_insea/" /* ← ضع رابط حساب إنستغرام */,
-    linkedin: "https://www.linkedin.com/company/golden-mean-insea/home/" /* ← ضع رابط قناة يوتيوب */,
+    facebook:
+      "https://www.facebook.com/593560277499706" /* ← ضع رابط صفحة فيسبوك */,
+    instagram:
+      "https://www.instagram.com/goldenmean_insea/" /* ← ضع رابط حساب إنستغرام */,
+    linkedin:
+      "https://www.linkedin.com/company/golden-mean-insea/home/" /* ← ضع رابط قناة يوتيوب */,
     email: "goldenmean@insea.ac.ma" /* ← بريد النادي */,
   },
 
@@ -128,7 +131,10 @@ const CLUB = {
     desc: "مجتمعٌ قرآنيٌّ دائم داخل المعهد؛ نحفظ فيه كتاب الله بمساقاتٍ محددة ورفقةٍ متواصلة تحت إشراف ومتابعة.",
     tracks: [
       { name: "مساق المفصل", detail: "من سورة ق إلى سورة الناس " },
-      { name: " مساق استرداد ", detail: "استرداد ما تم حفظه خلال مراحل التعليم السابقة" },
+      {
+        name: " مساق استرداد ",
+        detail: "استرداد ما تم حفظه خلال مراحل التعليم السابقة",
+      },
       { name: "مساق الزهراوين", detail: "سورة البقرة و سورة آل عمران" },
     ],
   },
@@ -181,12 +187,6 @@ const CLUB = {
       img: "./resources/img/lecture-04.jpeg",
     },
     {
-      title: "حلقة الحفظ — ساعة الصباح",
-      category: "مجالس",
-      icon: "book-marked",
-      img: "./resources/img/halaqa-02.jpg",
-    },
-    {
       title: "أمسية قرآنية ختامية",
       category: "مجالس",
       icon: "sparkles",
@@ -216,19 +216,14 @@ const CLUB = {
       icon: "presentation",
       img: "./resources/img/lecture-07.jpeg",
     },
-    {
-      title: "ركن توعوي داخل الحرم",
-      category: "محاضرات",
-      icon: "megaphone",
-      img: "./resources/img/booth-08.jpg",
-    },
   ],
 
   /* ─────────── 11) المقاطع المرئية ───────────
      استبدل XXXXXXX بمعرّف كل مقطع (مثال: watch?v=XXXXXXXXXXX) */
   videos: [
     {
-      title: "محاضرة : لماذا لا نتوب ؟... إلى متى الهروب ؟ || الشيخ موسى الدخيلة",
+      title:
+        "محاضرة : لماذا لا نتوب ؟... إلى متى الهروب ؟ || الشيخ موسى الدخيلة",
       channel: "محاضرات النادي",
       url: "https://www.youtube.com/watch?v=olS61EqyMwY",
     },
@@ -238,7 +233,8 @@ const CLUB = {
       url: "https://www.youtube.com/watch?v=LMHyu_k5mjg",
     },
     {
-      title: "هل الاقتصاد الإسلامي الحل الأمثل لحل الأزمات الإقتصادية في العالم؟ || د. محمد طلال لحلو",
+      title:
+        "هل الاقتصاد الإسلامي الحل الأمثل لحل الأزمات الإقتصادية في العالم؟ || د. محمد طلال لحلو",
       channel: "محاضرات النادي",
       url: "https://www.youtube.com/watch?v=nHjpRbkTSq4",
     },
@@ -248,7 +244,8 @@ const CLUB = {
       url: "https://www.youtube.com/watch?v=KeKtfhXj27Q",
     },
     {
-      title: "أهم أسباب الأزمات المالية وعلاجها في الاقتصاد الإسلامي || د. محمد طلال لحلو",
+      title:
+        "أهم أسباب الأزمات المالية وعلاجها في الاقتصاد الإسلامي || د. محمد طلال لحلو",
       channel: "محاضرات النادي",
       url: "https://www.youtube.com/watch?v=c_kxDU7InQg",
     },

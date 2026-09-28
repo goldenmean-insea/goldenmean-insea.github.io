@@ -405,7 +405,6 @@
     if (!grid || !window.CLUB || !CLUB.videos) return;
     grid.innerHTML = CLUB.videos.map(function (v, i) {
       var id = youtubeId(v.url);
-      /* مصغّرة يوتيوب الرسمية؛ إن فشل التحميل (معرّف وهمي) تُخفى وتبقى الخلفية */
       var thumb = id
         ? '<img src="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg" alt="" loading="lazy" class="absolute inset-0 h-full w-full object-cover" onerror="this.style.display=\'none\'">'
         : '';
@@ -422,7 +421,6 @@
             '<h3 class="font-amiri text-base font-bold text-pine dark:text-gold">' + v.title + '</h3>' +
             '<p class="mt-1 text-xs text-cocoa/60 dark:text-sand/50">' + v.channel + '</p>' +
           '</div>' +
-          /* زر شفاف يغطي البطاقة كاملة (HTML سليم + وصولية) */
           '<button type="button" class="absolute inset-0 z-10" aria-label="تشغيل المقطع: ' + v.title + '"></button>' +
         '</article>';
     }).join('');
@@ -468,9 +466,6 @@
     });
   }
 
-  /* ═══ 11) حقن روابط التواصل من data.js ═══
-     كل عنصر يحمل data-social="facebook|instagram|youtube|email".
-     الرابط '#' (غير مضبوط بعد) يُعتَّم مؤقتًا حتى يعدّله العميل. */
   function setupSocialLinks() {
     if (!window.CLUB || !CLUB.social) return;
     $$('[data-social]').forEach(function (el) {
@@ -492,13 +487,12 @@
     });
   }
 
-  /* ═══ 12) سنة الحقوق في التذييل (تتحدّث تلقائيًا) ═══ */
+  /* copyrith year increment auto*/
   function setupYear() {
     var y = String(new Date().getFullYear());
     $$('[data-year]').forEach(function (el) { el.textContent = y; });
   }
 
-  /* ═══ الإقلاع: كل الدوال تعمل فقط إذا وُجدت عناصرها في الصفحة الحالية ═══ */
   function init() {
     setActiveNav();
     setupMobileMenu();

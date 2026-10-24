@@ -362,7 +362,7 @@
       grid.innerHTML = items.length ? items.map(function (g, i) {
         return '' +
         '<figure class="card card-hover reveal overflow-hidden" style="transition-delay:' + ((i % 4) * 70) + 'ms">' +
-          '<div class="relative aspect-[4/3] bg-gradient-to-br from-pine to-pine-deep">' +
+          '<div class="relative aspect-[3/4] bg-gradient-to-br from-pine to-pine-deep">' +
             '<div class="absolute inset-0 bg-pattern-light opacity-[0.13]" aria-hidden="true"></div>' +
             '<div class="absolute inset-0 flex items-center justify-center text-gold-light/60" aria-hidden="true"><i data-lucide="' + (g.icon || 'image') + '" class="h-10 w-10"></i></div>' +
             /* الصورة الفعلية: إن لم تُرفع بعد تُخفى تلقائيًا وتبقى الخلفية الزخرفية */

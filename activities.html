@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>أنشطتنا | نادي كولدن مين</title>
-    <meta name="description" content="أنشطة نادي كولدن مين: مجالس أسبوعية، فعاليات موسمية، ومشروع مهندس حافظ لحفظ القرآن الكريم." />
+    <meta
+      name="description"
+      content="أنشطة نادي كولدن مين: مجالس أسبوعية، فعاليات موسمية، ومشروع مهندس حافظ لحفظ القرآن الكريم."
+    />
     <meta name="theme-color" content="#276747" />
     <link
       rel="icon"
@@ -586,7 +589,6 @@
           class="flex shrink-0 items-center gap-2.5"
           aria-label="نادي كولدن مين — الرئيسية"
         >
-        
           <span class="grid shrink-0">
             <img
               src="./resources/img/logo_bg.svg"
@@ -804,102 +806,221 @@
     </header>
 
     <main id="main" class="flex-1">
-
-    <!-- ═══ ترويسة الصفحة ═══ -->
-    <section class="relative overflow-hidden bg-gradient-to-b from-pine-deep to-pine text-cream">
-      <div class="absolute inset-0 bg-pattern-light opacity-[0.07]" aria-hidden="true"></div>
-      <div class="relative mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20">
-        <h1 class="mt-2 font-ruwudu text-4xl font-bold text-white sm:text-5xl">أنشطتنا</h1>
-        <div class="ornament my-5" aria-hidden="true"><span class="gem"></span></div>
-        <p class="mx-auto max-w-2xl leading-9 text-cream/85">مجالسُ أسبوعية، وفعالياتٌ موسمية، ومشروعٌ قرآنيٌّ دائم — اختر ما يناسب همّتك ووقتك.</p>
-      </div>
-    </section>
-
-    <!-- ═══ التبويبات ═══ -->
-    <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-      <div class="reveal flex flex-wrap justify-center gap-2 sm:gap-3" role="tablist" aria-label="أنواع الأنشطة">
-        <button type="button" class="tab-btn active" data-tab="weekly" role="tab" aria-selected="true">أنشطة أسبوعية</button>
-        <button type="button" class="tab-btn" data-tab="seasonal" role="tab" aria-selected="false">أنشطة موسمية</button>
-        <button type="button" class="tab-btn" data-tab="hafiz" role="tab" aria-selected="false">مشروع مهندس حافظ</button>
-      </div>
-
-      <!-- لوحة الأسبوعية (تُبنى من js/data.js → weekly) -->
-      <div data-tabpane="weekly" class="mt-12">
-        <div class="mb-8 text-center">
-          <h2 class="font-amiri text-2xl font-bold text-pine dark:text-gold">ثلاثة مواعيد ثابتة في أسبوعك</h2>
-          <p class="mt-2 text-sm text-cocoa/70 dark:text-sand/60">لتظل جمرة الإيمان متقدة في قلبك، وتسلم من غوائل الغفلة وزحام الحياة   </p>
+      <!-- ═══ ترويسة الصفحة ═══ -->
+      <section
+        class="relative overflow-hidden bg-gradient-to-b from-pine-deep to-pine text-cream"
+      >
+        <div
+          class="absolute inset-0 bg-pattern-light opacity-[0.07]"
+          aria-hidden="true"
+        ></div>
+        <div
+          class="relative mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:py-20"
+        >
+          <h1
+            class="mt-2 font-ruwudu text-4xl font-bold text-white sm:text-5xl"
+          >
+            أنشطتنا
+          </h1>
+          <div class="ornament my-5" aria-hidden="true">
+            <span class="gem"></span>
+          </div>
+          <p class="mx-auto max-w-2xl leading-9 text-cream/85">
+            مجالسُ أسبوعية، وفعالياتٌ موسمية، ومشروعٌ قرآنيٌّ دائم — اختر ما
+            يناسب همّتك ووقتك.
+          </p>
         </div>
-        <div id="weeklyGrid" class="grid gap-6 md:grid-cols-3"></div>
-      </div>
+      </section>
 
-      <!-- لوحة الموسمية (تُبنى من js/data.js → seasonal) -->
-      <div data-tabpane="seasonal" class="mt-12" hidden>
-        <div class="mb-8 text-center">
-          <h2 class="font-amiri text-2xl font-bold text-pine dark:text-gold">على مدار السنة</h2>
-          <p class="mt-2 text-sm text-cocoa/70 dark:text-sand/60">فعالياتٌ موسمية نستقبل بها الفصول ونودّعها.</p>
+      <!-- ═══ التبويبات ═══ -->
+      <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div
+          class="reveal flex flex-wrap justify-center gap-2 sm:gap-3"
+          role="tablist"
+          aria-label="أنواع الأنشطة"
+        >
+          <button
+            type="button"
+            class="tab-btn active"
+            data-tab="weekly"
+            role="tab"
+            aria-selected="true"
+          >
+            أنشطة أسبوعية
+          </button>
+          <button
+            type="button"
+            class="tab-btn"
+            data-tab="seasonal"
+            role="tab"
+            aria-selected="false"
+          >
+            أنشطة موسمية
+          </button>
+          <button
+            type="button"
+            class="tab-btn"
+            data-tab="hafiz"
+            role="tab"
+            aria-selected="false"
+          >
+            مشروع مهندس حافظ
+          </button>
         </div>
-        <div id="seasonalGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
-      </div>
 
-      <!-- لوحة مهندس حافظ (تُبنى من js/data.js → hafiz) -->
-      <div data-tabpane="hafiz" class="mt-12" hidden>
-        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-l from-pine-deep to-pine p-6 text-cream sm:p-12">
-          <div class="absolute inset-0 bg-pattern-light opacity-[0.08]" aria-hidden="true"></div>
-          <div class="relative grid items-center gap-10 lg:grid-cols-2">
-            <div>
-              <!-- <span class="inline-flex items-center gap-2 rounded-full border border-gold/50 bg-gold/10 px-4 py-1.5 text-xs font-semibold text-gold-light">
+        <!-- لوحة الأسبوعية (تُبنى من js/data.js → weekly) -->
+        <div data-tabpane="weekly" class="mt-12">
+          <div class="mb-8 text-center">
+            <h2 class="font-amiri text-2xl font-bold text-pine dark:text-gold">
+              ثلاثة مواعيد ثابتة في أسبوعك
+            </h2>
+            <p class="mt-2 text-sm text-cocoa/70 dark:text-sand/60">
+              لتظل جمرة الإيمان متقدة في قلبك، وتسلم من غوائل الغفلة وزحام
+              الحياة
+            </p>
+          </div>
+          <div id="weeklyGrid" class="grid gap-6 md:grid-cols-3"></div>
+        </div>
+
+        <!-- لوحة الموسمية (تُبنى من js/data.js → seasonal) -->
+        <div data-tabpane="seasonal" class="mt-12" hidden>
+          <div class="mb-8 text-center">
+            <h2 class="font-amiri text-2xl font-bold text-pine dark:text-gold">
+              على مدار السنة
+            </h2>
+            <p class="mt-2 text-sm text-cocoa/70 dark:text-sand/60">
+              فعالياتٌ موسمية نستقبل بها الفصول ونودّعها.
+            </p>
+          </div>
+          <div
+            id="seasonalGrid"
+            class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          ></div>
+        </div>
+
+        <!-- لوحة مهندس حافظ (تُبنى من js/data.js → hafiz) -->
+        <div data-tabpane="hafiz" class="mt-12" hidden>
+          <div
+            class="relative overflow-hidden rounded-3xl bg-gradient-to-l from-pine-deep to-pine p-6 text-cream sm:p-12"
+          >
+            <div
+              class="absolute inset-0 bg-pattern-light opacity-[0.08]"
+              aria-hidden="true"
+            ></div>
+            <div class="relative grid items-center gap-10 lg:grid-cols-2">
+              <div>
+                <!-- <span class="inline-flex items-center gap-2 rounded-full border border-gold/50 bg-gold/10 px-4 py-1.5 text-xs font-semibold text-gold-light">
                 <i data-lucide="book-marked" class="h-4 w-4" aria-hidden="true"></i> مشروعنا القرآني الدائم
               </span> -->
-              <h2 id="hafizTitle" class="mt-4 font-amiri text-3xl font-bold text-white sm:text-4xl">مشروع «مهندس حافظ»</h2>
-              <p id="hafizDesc" class="mt-4 leading-9 text-cream/85">مجتمعٌ قرآنيٌّ دائم داخل المعهد؛ نحفظ فيه كتاب الله بمساقاتٍ محددة ورفقةٍ متواصلة.</p>
-              <a href="./join.html" class="btn btn-gold mt-8">انضم إلى المشروع <i data-lucide="arrow-left" class="h-4 w-4" aria-hidden="true"></i></a>
+                <h2
+                  id="hafizTitle"
+                  class="mt-4 font-amiri text-3xl font-bold text-white sm:text-4xl"
+                >
+                  مشروع «مهندس حافظ»
+                </h2>
+                <p id="hafizDesc" class="mt-4 leading-9 text-cream/85">
+                  مجتمعٌ قرآنيٌّ دائم داخل المعهد؛ نحفظ فيه كتاب الله بمساقاتٍ
+                  محددة ورفقةٍ متواصلة.
+                </p>
+                <a href="./join.html" class="btn btn-gold mt-8"
+                  >انضم إلى المشروع
+                  <i
+                    data-lucide="arrow-left"
+                    class="h-4 w-4"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+              <div>
+                <h3 class="mb-4 font-amiri text-xl font-bold text-gold-light">
+                  المساقات المتاحة
+                </h3>
+                <div id="hafizTracks" class="space-y-3">
+                  <!-- تُبنى من js/data.js → hafiz.tracks -->
+                </div>
+              </div>
             </div>
-            <div>
-              <h3 class="mb-4 font-amiri text-xl font-bold text-gold-light">المساقات المتاحة</h3>
-              <div id="hafizTracks" class="space-y-3"><!-- تُبنى من js/data.js → hafiz.tracks --></div>
+          </div>
+
+          <!-- كيف تنضم؟ -->
+          <h3
+            class="mt-10 text-center font-amiri text-2xl font-bold text-pine dark:text-gold"
+          >
+            كيف تنضم؟
+          </h3>
+          <div class="mt-6 grid gap-4 sm:grid-cols-3">
+            <div class="card card-hover reveal p-5 text-center">
+              <div
+                class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 text-gold dark:bg-gold/20"
+              >
+                <i
+                  data-lucide="clipboard-list"
+                  class="h-5 w-5"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h4 class="font-amiri text-lg font-bold text-pine dark:text-gold">
+                سجّل في المشروع
+              </h4>
+              <!-- <p class="mt-1 text-xs leading-6 text-cocoa/70 dark:text-sand/60">عبر استمارة الانضمام باختيار المسار القرآني.</p> -->
+            </div>
+            <div class="card card-hover reveal p-5 text-center">
+              <div
+                class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 text-gold dark:bg-gold/20"
+              >
+                <i data-lucide="compass" class="h-5 w-5" aria-hidden="true"></i>
+              </div>
+              <h4 class="font-amiri text-lg font-bold text-pine dark:text-gold">
+                حدّد مساقك
+              </h4>
+              <!-- <p class="mt-1 text-xs leading-6 text-cocoa/70 dark:text-sand/60">جلسة قصيرة مع المشرف تُرسم فيها خريطة حفظك.</p> -->
+            </div>
+            <div class="card card-hover reveal p-5 text-center">
+              <div
+                class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 text-gold dark:bg-gold/20"
+              >
+                <i
+                  data-lucide="calendar-check"
+                  class="h-5 w-5"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <h4 class="font-amiri text-lg font-bold text-pine dark:text-gold">
+                التزم بالورد
+              </h4>
+              <!-- <p class="mt-1 text-xs leading-6 text-cocoa/70 dark:text-sand/60">خطة أسبوعية ورفيقُ مراجعةٍ يتابعك.</p> -->
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- كيف تنضم؟ -->
-        <h3 class="mt-10 text-center font-amiri text-2xl font-bold text-pine dark:text-gold">كيف تنضم؟</h3>
-        <div class="mt-6 grid gap-4 sm:grid-cols-3">
-          <div class="card card-hover reveal p-5 text-center">
-            <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 text-gold dark:bg-gold/20"><i data-lucide="clipboard-list" class="h-5 w-5" aria-hidden="true"></i></div>
-            <h4 class="font-amiri text-lg font-bold text-pine dark:text-gold">سجّل في المشروع</h4>
-            <!-- <p class="mt-1 text-xs leading-6 text-cocoa/70 dark:text-sand/60">عبر استمارة الانضمام باختيار المسار القرآني.</p> -->
+      <!-- ═══ معرض الصور ═══ -->
+      <section class="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
+        <div class="reveal text-center">
+          <h2 class="section-title">من لحظاتنا</h2>
+          <div class="ornament" aria-hidden="true">
+            <span class="gem"></span>
           </div>
-          <div class="card card-hover reveal p-5 text-center">
-            <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 text-gold dark:bg-gold/20"><i data-lucide="compass" class="h-5 w-5" aria-hidden="true"></i></div>
-            <h4 class="font-amiri text-lg font-bold text-pine dark:text-gold">حدّد مساقك</h4>
-            <!-- <p class="mt-1 text-xs leading-6 text-cocoa/70 dark:text-sand/60">جلسة قصيرة مع المشرف تُرسم فيها خريطة حفظك.</p> -->
-          </div>
-          <div class="card card-hover reveal p-5 text-center">
-            <div class="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 text-gold dark:bg-gold/20"><i data-lucide="calendar-check" class="h-5 w-5" aria-hidden="true"></i></div>
-            <h4 class="font-amiri text-lg font-bold text-pine dark:text-gold">التزم بالورد</h4>
-            <!-- <p class="mt-1 text-xs leading-6 text-cocoa/70 dark:text-sand/60">خطة أسبوعية ورفيقُ مراجعةٍ يتابعك.</p> -->
-          </div>
+          <p class="section-sub mt-3">
+            أطيافٌ من مجالسنا وخرجاتنا ومحاضراتنا — والبقيةُ تأتي.
+          </p>
         </div>
-      </div>
-    </section>
 
-    <!-- ═══ معرض الصور ═══ -->
-    <section class="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
-      <div class="reveal text-center">
-        <h2 class="section-title">من لحظاتنا</h2>
-        <div class="ornament" aria-hidden="true"><span class="gem"></span></div>
-        <p class="section-sub mt-3">أطيافٌ من مجالسنا وخرجاتنا ومحاضراتنا — والبقيةُ تأتي.</p>
-      </div>
-
-      <!-- ضع صورك في ./resources/img ثم عدّل المسارات في js/data.js → gallery
+        <!-- ضع صورك في ./resources/img ثم عدّل المسارات في js/data.js → gallery
            (قبل وضع الصور تظهر بطاقاتٌ زخرفية أنيقة تلقائيًا كـ placeholder) -->
-      <div id="galleryFilters" class="mt-8 flex flex-wrap justify-center gap-2"></div>
-      <div id="galleryGrid" class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"></div>
-    </section>
-  </main>
+        <div
+          id="galleryFilters"
+          class="mt-8 flex flex-wrap justify-center gap-2"
+        ></div>
+        <div
+          id="galleryGrid"
+          class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4"
+        ></div>
+      </section>
+    </main>
 
-  <!-- ▄▄ التذييل — نسخه متطابقة في كل الصفحات ▄▄ -->
-  <footer class="relative mt-auto overflow-hidden bg-espresso text-sand/75">
+    <!-- ▄▄ التذييل — نسخه متطابقة في كل الصفحات ▄▄ -->
+    <footer class="relative mt-auto overflow-hidden bg-espresso text-sand/75">
       <div
         class="absolute inset-0 bg-pattern-light opacity-[0.05]"
         aria-hidden="true"
@@ -927,7 +1048,6 @@
               نادٍ ثقافيّ دينيّ لطلاب المعهد الوطني للإحصاء والاقتصاد التطبيقي،
               يسعى إلى بناء الوعي وتعزيز الجانب الثقافي والديني لدى الطلاب.
             </p>
-            
           </div>
 
           <!-- روابط سريعة -->
@@ -1019,11 +1139,24 @@
       </div>
     </footer>
 
-  <button type="button" id="toTop" aria-label="العودة إلى أعلى الصفحة">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
-  </button>
+    <button type="button" id="toTop" aria-label="العودة إلى أعلى الصفحة">
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <line x1="12" y1="19" x2="12" y2="5" />
+        <polyline points="5 12 12 5 19 12" />
+      </svg>
+    </button>
 
-  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script src="./js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
